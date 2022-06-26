@@ -7,6 +7,6 @@
         <plugin name="training_blockplugin" type="Training\TestPlugin\Plugin\Block\Template" disabled="true" />
     </type>
     <type name="Magento\Catalog\Controller\Product\View">
-        <plugin name="training_aroundtest" type="Training\TestPlugin\Plugin\Controller\Product\View" />
+        <plugin name="training_aroundtest" type="Training\TestPlugin\Plugin\Controller\Product\View" disabled="true" />
     </type>
 </config>
