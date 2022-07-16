@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Training\Rendering\Controller\Review;
 
-class Index implements \Magento\Framework\App\Action\HttpGetActionInterface
+class Index implements \Magento\Framework\App\Action\HttpPostActionInterface
 {
     /**
      * @var \Magento\Framework\Controller\Result\JsonFactory
@@ -24,7 +24,7 @@ class Index implements \Magento\Framework\App\Action\HttpGetActionInterface
     public function execute()
     {
         $result = $this->resultJsonFactory->create();
-        $result->setData(json_encode($this->getRandomReviewData()));
+        $result->setData($this->getRandomReviewData());
 
         return $result;
     }

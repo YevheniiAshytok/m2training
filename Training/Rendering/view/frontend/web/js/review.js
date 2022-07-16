@@ -22,6 +22,7 @@ define([
                 type: 'post',
                 dataType: 'json'})
                 .done(function (data) {
+                    console.log(data);
                     if (data.name && data.message) {
                         self.reviewerName(data.name);
                         self.reviewerMessage(data.message);
